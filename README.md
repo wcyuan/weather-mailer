@@ -25,11 +25,9 @@ That didn't work, so, looking at https://cloud.google.com/appengine/downloads#Go
   cd bin
   ln -s ../lib/google_appengine/*.py .
 
-But then I realized that dev_appserver.py already exists at /home/ubuntu/bin, so now I'm hoping that
-google_appengine support is already baked right in.  But the suggestion for the command to run
-to bring up a test server is still a good one:
+Then, run the server with:
 
-  conanyuan@weather-mailer:~/workspace (master) $ dev_appserver.py --host $IP --port $PORT .
+  $ dev_appserver.py --host $IP --port $PORT ~/workspace
 
 
 
